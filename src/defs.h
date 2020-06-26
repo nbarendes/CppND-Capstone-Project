@@ -1,25 +1,30 @@
-/*
-#define MIN(a,b) (((a)<(b))?(a):(b))
-#define MAX(a,b) (((a)>(b))?(a):(b))
-#define STRNCPY(dest, src, n) strncpy(dest, src, n); dest[n - 1] = '\0'
 
-#define SCREEN_WIDTH   1280
-#define SCREEN_HEIGHT  720
-*/
-#define MAX_TILES    7
+#ifndef DEF_DEFS
+#define DEF_DEFS
+ 
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <math.h>
+#include <SDL2/SDL.h>
+ 
+/* On inclut les libs supplémentaires */
+#include <SDL2/SDL_image.h>
+#include <SDL2/SDL_ttf.h>
+#include <SDL2/SDL_mixer.h>
+ 
+// Window size: 800x480 pixels 
+#define SCREEN_WIDTH 800
+#define SCREEN_HEIGHT 480
 
-#define TILE_SIZE    64
-
-#define MAP_WIDTH    40
-#define MAP_HEIGHT   20
-
-#define MAP_RENDER_WIDTH    20
-#define MAP_RENDER_HEIGHT   12
-/*
-#define MAX_NAME_LENGTH        32
-#define MAX_FILENAME_LENGTH    1024
-
-#define MAX_KEYBOARD_KEYS 350
-
-#define MAX_SND_CHANNELS 16
-*/
+/* Maximum size of the map: 400 x 150 tiles */
+#define MAX_MAP_X 400
+#define MAX_MAP_Y 150
+ 
+/* Tile size (32 x 32 pixels) */
+#define TILE_SIZE 32
+ 
+/* Animation constants */
+#define TIME_BETWEEN_2_FRAMES 20
+ 
+#endif
