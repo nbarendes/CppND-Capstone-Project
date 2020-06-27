@@ -138,23 +138,23 @@ Key bindings<br>
 
 ### Loops, Functions, I/O
 - [X] A variety of control structures are used in the project. The project code is clearly organized into functions.
-- [ ] The project reads data from an external file or writes data to a file as part of the necessary operation of the program.
-- [ ] The project accepts input from a user as part of the necessary operation of the program.
+- [X] The project reads data from an external file or writes data to a file as part of the necessary operation of the program.
+- [X] The project accepts input from a user as part of the necessary operation of the program.
 
 ### Object Oriented Programming
-- [X] The project code is organized into classes with class attributes to hold the data, and class methods to perform tasks.
-- [X] All class data members are explicitly specified as public, protected, or private.
+- [] The project code is organized into classes with class attributes to hold the data, and class methods to perform tasks.
+- [] All class data members are explicitly specified as public, protected, or private.
 - [ ] All class members that are set to argument values are initialized through member initialization lists.
 - [X] All class member functions document their effects, either through function names, comments, or formal documentation. Member functions do not change program state in undocumented ways.
-- [X] Appropriate data and functions are grouped into classes. Member data that is subject to an invariant is hidden from the user. State is accessed via member functions.
-- [X] Inheritance hierarchies are logical. Composition is used instead of inheritance when appropriate. Abstract classes are composed of pure virtual functions. Override functions are specified.
+- [] Appropriate data and functions are grouped into classes. Member data that is subject to an invariant is hidden from the user. State is accessed via member functions.
+- [] Inheritance hierarchies are logical. Composition is used instead of inheritance when appropriate. Abstract classes are composed of pure virtual functions. Override functions are specified.
 - [ ] One function is overloaded with different signatures for the same function name.
 - [ ] One member function in an inherited class overrides a virtual base class member function.
 - [ ] One function is declared with a template that allows it to accept a generic parameter.
 
 ### Memory Management
 - [X] At least two variables are defined as references, or two functions use pass-by-reference in the project code.
-- [X] At least one class that uses unmanaged dynamically allocated memory, along with any class that otherwise needs to modify state upon the termination of an object, uses a destructor.
+- [] At least one class that uses unmanaged dynamically allocated memory, along with any class that otherwise needs to modify state upon the termination of an object, uses a destructor.
 - [ ] The project follows the Resource Acquisition Is Initialization pattern where appropriate, by allocating objects at compile-time, initializing objects when they are declared, and utilizing scope to ensure their automatic destruction.
 - [ ] For all classes, if any one of the copy constructor, copy assignment operator, move constructor, move assignment operator, and destructor are defined, then all of these functions are defined.
 - [ ] For classes with move constructors, the project returns objects of that class by value, and relies on the move constructor, instead of copying the object.
