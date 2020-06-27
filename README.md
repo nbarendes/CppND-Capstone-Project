@@ -48,7 +48,7 @@ The project is a a platform game. Once you follow the instructions below to comp
 
 ## How to play
 
-Key bindings
+Key bindings<br>
 
 [esc] - exit
 [arrow left] - move left
