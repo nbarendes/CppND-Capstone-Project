@@ -5,15 +5,15 @@ The project is a a platform game. Once you follow the instructions below to comp
 
 ## File and function
 
- File name : ```defs.h```
+ * File name : ```defs.h```
  This first file contains all the definitions of our game, useful for the compilation preprocessor as well as the headers of the libraries to be included.
  
  
- File name: ```structs.h``
+ * File name: ```structs.h```
  This file contains all the structures used by our game
- 1. typepedef struct Input Structure to manage keyboard input
- 2. typedef struct Map ``Structure to manage the map to be displayed
- 3. typeef struct GameObject ``Structure to manage our sprites
+ 1. ```typepedef struct``` Input Structure to manage keyboard input
+ 2. ```typedef struct Map ``` Structure to manage the map to be displayed
+ 3. ```typeef struct GameObject ``` Structure to manage our sprites
  
  File name: ``main.cpp``
  it already contains the backbone of our game.
