@@ -5,7 +5,7 @@ The project is a a platform game. Once you follow the instructions below to comp
 
 ## File and function
 
- * ```defs.h```
+ * File name: ```defs.h```
  This first file contains all the definitions of our game, useful for the compilation preprocessor as well as the headers of the libraries to be included.
  
  
@@ -15,11 +15,11 @@ The project is a a platform game. Once you follow the instructions below to comp
  2. ```typedef struct Map ``` Structure to manage the map to be displayed
  3. ```typeef struct GameObject ``` Structure to manage our sprites
  
- File name: ``main.cpp``
+ * File name: ``main.cpp``
  it already contains the backbone of our game.
  the file does not have a header (``main.h``) but rather uses a ``prototypes.h`` file.
  
- File name: ```map.cpp```
+ * File name: ```map.cpp```
  This file is in charge of managing our map
  functions : 
  1. ```initMaps``` will initialize all the variables necessary for the proper functioning of our map.
@@ -39,20 +39,20 @@ The project is a a platform game. Once you follow the instructions below to comp
  15. ```void mapCollision(GameObject *entity)*```
  
  
- File name: ```prototypes.h```
+ * File name: ```prototypes.h```
  this prototypes.h file contains the list of all prototypes
  
- File name: ```init.cpp```
+ * File name: ```init.cpp```
   This file contains 4 functions :
   1. ```SLD_Renderer *getrenderer()``` render it
   2. ```void loadGame()``` load our game
   2. ```void init(char *title)``` initializes SDL 2 and its libs.
   3. ```void cleanup()``` releases the memory occupied by window and renders it
   
-  File namer: ```input.cpp```
+  * File name: ```input.cpp```
   This file contains our keyboard input detection function.
   
-  File name: ```draw.cpp```
+  * File name: ```draw.cpp```
   This file contains the following our essential drawing and image processing functions 
   1. ```dragGame()```displays the 3 layers of the map in order (layer 1 = action, layer 2 = background and layer 3 = foreground)
   2. ```void drawTile()``` cuts the tileset to display only the correct tile.
@@ -60,7 +60,7 @@ The project is a a platform game. Once you follow the instructions below to comp
   4. ```oid drawImage(SDL_Texture *image, int x, int y)```
   5. ```void delay(unsigned int frameLimit)```
   
-  File name: ```player.cpp```
+  * File name: ```player.cpp```
   this file contains the essential functions for the creation and use of the player 
   1. ```GameObject *getPlayer(void)``` Returns the GameObject player.
   2. ```int getPlayerx()```player's x position  of the player
