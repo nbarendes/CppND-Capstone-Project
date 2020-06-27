@@ -1,4 +1,4 @@
-# CppND-Capstone-Ping-Pong-Game
+# CppND-Capstone-Bediako-Game
 This project is the Capstone project for Udacity's C++ NanoDegree program [Udacity C++ Nanodegree Program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213).
 
 The project is a a platform game. Once you follow the instructions below to compile, build, and run the project, you can start playing imidiately. 
