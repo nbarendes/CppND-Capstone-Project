@@ -54,7 +54,7 @@ Key bindings<br>
 [arrow left] - move left
 [arrow right] - move right
 [space] - move up
-[arrow down] - move down
+[arrow down] - move down <br>
 
 
 ## Capstone Project Rubic Points
