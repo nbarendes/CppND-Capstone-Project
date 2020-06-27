@@ -24,16 +24,18 @@ The project is a a platform game. Once you follow the instructions below to comp
 
 ## Install additionnal dependencies (on Linux)
 
-* TrueType Font library for Simple DirectMedia Layer 2, development files: 
+* TrueType Font library for Simple DirectMedia Layer 2
 ```
    sudo apt-get install libsdl2-ttf-dev
 ```
-* Image loading library for Simple DirectMedia Layer 2, development files: color:red 
+* Image loading library for Simple DirectMedia Layer 2
 ```
    sudo apt-get install -y libsdl2-image-dev
 ```
-  
-    
+* Mixer library for Simple DirectMedia Layer 2
+```  
+  sudo apt-get install libsdl2-mixer-dev
+ ```   
 
     
 
