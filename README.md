@@ -42,7 +42,7 @@ The project is a a platform game. Once you follow the instructions below to comp
 1. Clone this repo.
 2. Go to the 'build' directory: `cd build`
 3. Compile: `cmake .. && make`
-4. Run it: `./PingPong`.
+4. Run it: `./Bediako`.
 
 ## Capstone Project Rubic Points
 ### Compileing and testing
