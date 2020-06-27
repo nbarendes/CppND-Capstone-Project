@@ -63,9 +63,9 @@ The project is a a platform game. Once you follow the instructions below to comp
   * File name: ```player.cpp```<br>
   this file contains the essential functions for the creation and use of the player 
   1. ```GameObject *getPlayer(void)``` Returns the GameObject player.
-  2. ```int getPlayerx()```player's x position  of the player
-  3. ```int getPlayery()``` player's y position of the player 
-  4. ```void setPlayerx(int value)```changing player x position
+  2. ```int getPlayerx()```player's x position 
+  3. ```int getPlayery()``` player's y position 
+  4. ```void setPlayerx(int value)```changing player's x position
   5. ```void setPlayery(int value)```changing the player's y-position 
   6. ```int getLevel()``` Returns the number of the current level.
   7. ```void SetLevelValue(int value)```Changes the value of the current level.
