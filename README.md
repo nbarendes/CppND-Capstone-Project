@@ -3,22 +3,22 @@ This project is the Capstone project for Udacity's C++ NanoDegree program [Udaci
 
 The project is a a platform game. Once you follow the instructions below to compile, build, and run the project, you can start playing imidiately. 
 
-## Class Diagram
+## File and function
 
- Nom du fichier : ```defs.h```
+ File name : ```defs.h```
  Ce premier fichier contient toutes les définitions de notre jeu , utiles pour le préprocesseur à la compilation ainsi que les en-têtes des bibliothèques à inclure.
  
- Nom du fichier : ```structs.h```
+ File name : ```structs.h```
  Ce fichier contient toutes les structures utilisées par notre jeu
  1. ```typedef struct Input``` Structure pour gérer l'input (clavier puis joystick)
  2. ```typedef struct Map ```Structure pour gérer la map à afficher
  3. ```typedef struct GameObject ```Structure pour gérer nos sprites
  
- Nom du fichier : ```main.cpp```
+ File name : ```main.cpp```
  il contient déjà l'ossature de notre jeu.
  le fichier n'a pas d'en-tête (```main.h```) mais plutôt il fait appel à un fichier ```prototypes.h```
  
- Fichier : ```map.cpp```
+ File name : ```map.cpp```
  Ce fichier est charger de gérer notre map
  fonctions : 
  1. ```initMaps()``` se chargera d'initialiser toutes les variables nécessaires au bon fonctionnement de notre map
@@ -38,20 +38,20 @@ The project is a a platform game. Once you follow the instructions below to comp
  15. ```void mapCollision(GameObject *entity)```
  
  
- Nom du fichier : ```prototypes.h```
+ File name : ```prototypes.h```
  ce fichier prototypes.h contient la liste de tous les prototypes
  
- Nom du fichier : ```init.cpp```
+ File name : ```init.cpp```
   Ce fichier contient 4 fonctions :
   1. ```SDL_Renderer *getrenderer(void)``` le renderer
   2. ```void loadGame()```  charge notre jeu
   2. ```void init(char *title)``` initialise la SDL 2 et ses libs
   3. ```void cleanup()``` libère la mémoire occupée par window et le renderer
   
-  Nom du fichier : ```input.cpp```
+  File namer : ```input.cpp```
   ce fichier contient notre fonction de détection des entrées clavier
   
-  Nom du fichier : ```draw.cpp```
+  File name : ```draw.cpp```
   Ce fichier contient la suite nos fonctions essentielles de dessin et de traitement des images 
   1. ```drawGame()``` affiche les 3 couches de la map dans l'ordre (couche 1 = action, couche 2 = background et couche 3 = foreground)
   2. ```void drawTile() ```découpe le tileset pour afficher uniquement la bonne tile
@@ -59,7 +59,7 @@ The project is a a platform game. Once you follow the instructions below to comp
   4. ```oid drawImage(SDL_Texture *image, int x, int y)```
   5. ```void delay(unsigned int frameLimit)```
   
-  Nom du fichier : ```player.cpp```
+  File name : ```player.cpp```
   ce fichier contient les fonctions essentielles pour la création et l'utilisation du joueur 
   1. ```GameObject *getPlayer(void)``` Renvoie le GameObject player
   2.```int getPlayerx(void)``` position x du joueur
