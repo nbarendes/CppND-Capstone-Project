@@ -22,19 +22,19 @@ The project is a a platform game. Once you follow the instructions below to comp
  Ce fichier est charger de gérer notre map
  fonctions : 
  1. ```initMaps()``` se chargera d'initialiser toutes les variables nécessaires au bon fonctionnement de notre map
- 2. ```SDL_Texture *getBackground(void)``` renvoie simplement la texture du background
+ 2. ```SDL_Texture *getBackground()``` renvoie simplement la texture du background
  3. ```cleanMaps()``` fera le ménage à la fin du programme en supprimant de la mémoire notre fichier map.background.
  4. ```void loadMap(char *name)``` charge la map
  5. ```void drawMap(int layer)```  Affiche la map de tiles de layer 1/2/3
- 6. ```void changeLevel(void)``` chargera le niveau
- 7. ```int getStartX(void)``` accede au point de départ x à partir duquel on doit dessiner la map.
+ 6. ```void changeLevel()``` chargera le niveau
+ 7. ```int getStartX()``` accede au point de départ x à partir duquel on doit dessiner la map.
  8. ```void setStartX(int valeur)``` modifie le  point de départ x à partir duquel on doit dessiner la map.
- 9. ```int getStartY(void)``` accede au point de départ y à partir duquel on doit dessiner la map.
+ 9. ```int getStartY()``` accede au point de départ y à partir duquel on doit dessiner la map.
  10. ```void setStartY(int valeur)``` modifie le  point de départ y à partir duquel on doit dessiner la map.
- 11. ```int getMaxX(void)``` accede au point de coordonnée x  de la fin de la map
- 12. ```int getMaxY(void)``` accede au point de coordonnée y  de la fin de la map
- 13. ```int getBeginX(void)``` affiche la coordonnée x du point de départ du personnage
- 14. ```int getBeginY(void)``` affiche la coordonnée x du point de départ du personnage
+ 11. ```int getMaxX()``` accede au point de coordonnée x  de la fin de la map
+ 12. ```int getMaxY()``` accede au point de coordonnée y  de la fin de la map
+ 13. ```int getBeginX()``` affiche la coordonnée x du point de départ du personnage
+ 14. ```int getBeginY()``` affiche la coordonnée x du point de départ du personnage
  15. ```void mapCollision(GameObject *entity)```
  
  
@@ -43,7 +43,7 @@ The project is a a platform game. Once you follow the instructions below to comp
  
  File name : ```init.cpp```
   Ce fichier contient 4 fonctions :
-  1. ```SDL_Renderer *getrenderer(void)``` le renderer
+  1. ```SDL_Renderer *getrenderer()``` le renderer
   2. ```void loadGame()```  charge notre jeu
   2. ```void init(char *title)``` initialise la SDL 2 et ses libs
   3. ```void cleanup()``` libère la mémoire occupée par window et le renderer
@@ -62,18 +62,18 @@ The project is a a platform game. Once you follow the instructions below to comp
   File name : ```player.cpp```
   ce fichier contient les fonctions essentielles pour la création et l'utilisation du joueur 
   1. ```GameObject *getPlayer(void)``` Renvoie le GameObject player
-  2.```int getPlayerx(void)``` position x du joueur
-  3. ```int getPlayery(void)``` position y du joueur
+  2.```int getPlayerx()``` position x du joueur
+  3. ```int getPlayery()``` position y du joueur
   4. ```void setPlayerx(int valeur)``` modification de la position x du joueur
   5. ```void setPlayery(int valeur)``` modification de la position y du joueur 
-  6. ```int getLevel(void)``` Renvoie le numéro du niveau en cours
+  6. ```int getLevel()``` Renvoie le numéro du niveau en cours
   7. ```void SetValeurDuNiveau(int valeur)``` Change la valeur du niveau en cours
-  8. ```void initPlayerSprites(void)``` Charge la spritesheet du joueur
-  9. ```void cleanPlayer(void)``` Libère le sprite du héros à la fin du jeu
+  8. ```void initPlayerSprites()``` Charge la spritesheet du joueur
+  9. ```void cleanPlayer()``` Libère le sprite du héros à la fin du jeu
   10. ```void initializePlayer(int newLevel)``` initialisation du joueur
-  11. ```void drawPlayer(void)``` affiche le joueur 
+  11. ```void drawPlayer()``` affiche le joueur 
   12. ```void updatePlayer(Input *input)``` mise a jour de la position du joueur 
-  13. ```void centerScrollingOnPlayer(void)``` gére la caméra et le scrolling
+  13. ```void centerScrollingOnPlayer()``` gére la caméra et le scrolling
  
  
 ## Dependencies for Running Locally
