@@ -5,61 +5,61 @@ The project is a a platform game. Once you follow the instructions below to comp
 
 ## Class Diagram
 
- Nom du fichier : defs.h
+ Nom du fichier : ```defs.h```
  Ce premier fichier contient toutes les définitions de notre jeu , utiles pour le préprocesseur à la compilation ainsi que les en-têtes des bibliothèques à inclure.
  
- Nom du fichier : structs.h
+ Nom du fichier : ```structs.h```
  Ce fichier contient toutes les structures utilisées par notre jeu
  1. ```typedef struct Input``` Structure pour gérer l'input (clavier puis joystick)
  2. ```typedef struct Map ```Structure pour gérer la map à afficher
  3. ```typedef struct GameObject ```Structure pour gérer nos sprites
  
- Nom du fichier : main.cpp
+ Nom du fichier : ```main.cpp```
  il contient déjà l'ossature de notre jeu.
- le fichier n'a pas d'en-tête (main.h) mais plutôt il fait appel à un fichier prototypes.h
+ le fichier n'a pas d'en-tête (```main.h```) mais plutôt il fait appel à un fichier ```prototypes.h```
  
- Fichier : map.cpp
+ Fichier : ```map.cpp```
  Ce fichier est charger de gérer notre map
  fonctions : 
- 1. initMaps() se chargera d'initialiser toutes les variables nécessaires au bon fonctionnement de notre map
- 2. SDL_Texture *getBackground(void) renvoie simplement la texture du background
- 3. cleanMaps() fera le ménage à la fin du programme en supprimant de la mémoire notre fichier map.background.
- 4. void loadMap(char *name) charge la map
- 5. void drawMap(int layer)  Affiche la map de tiles de layer 1/2/3
- 6. void changeLevel(void) chargera le niveau
- 7. int getStartX(void) accede au point de départ x à partir duquel on doit dessiner la map.
- 8. void setStartX(int valeur) modifie le  point de départ x à partir duquel on doit dessiner la map.
- 9. int getStartY(void) accede au point de départ y à partir duquel on doit dessiner la map.
- 10. void setStartY(int valeur) modifie le  point de départ y à partir duquel on doit dessiner la map.
- 11. int getMaxX(void) accede au point de coordonnée x  de la fin de la map
- 12. int getMaxY(void) accede au point de coordonnée y  de la fin de la map
- 13. int getBeginX(void) affiche la coordonnée x du point de départ du personnage
- 14. int getBeginY(void) affiche la coordonnée x du point de départ du personnage
- 15. void mapCollision(GameObject *entity)
+ 1. ```initMaps()``` se chargera d'initialiser toutes les variables nécessaires au bon fonctionnement de notre map
+ 2. ```SDL_Texture *getBackground(void)``` renvoie simplement la texture du background
+ 3. ```cleanMaps()``` fera le ménage à la fin du programme en supprimant de la mémoire notre fichier map.background.
+ 4. ```void loadMap(char *name)``` charge la map
+ 5. ```void drawMap(int layer)```  Affiche la map de tiles de layer 1/2/3
+ 6. ```void changeLevel(void)``` chargera le niveau
+ 7. ```int getStartX(void)``` accede au point de départ x à partir duquel on doit dessiner la map.
+ 8. ```void setStartX(int valeur)``` modifie le  point de départ x à partir duquel on doit dessiner la map.
+ 9. ```int getStartY(void)``` accede au point de départ y à partir duquel on doit dessiner la map.
+ 10. ```void setStartY(int valeur)``` modifie le  point de départ y à partir duquel on doit dessiner la map.
+ 11. ```int getMaxX(void)``` accede au point de coordonnée x  de la fin de la map
+ 12. ```int getMaxY(void)``` accede au point de coordonnée y  de la fin de la map
+ 13. ```int getBeginX(void)``` affiche la coordonnée x du point de départ du personnage
+ 14. ```int getBeginY(void)``` affiche la coordonnée x du point de départ du personnage
+ 15. ```void mapCollision(GameObject *entity)```
  
  
- Nom du fichier : prototypes.h
+ Nom du fichier : ```prototypes.h```
  ce fichier prototypes.h contient la liste de tous les prototypes
  
- Nom du fichier : init.cpp
+ Nom du fichier : ```init.cpp```
   Ce fichier contient 4 fonctions :
-  1. SDL_Renderer *getrenderer(void) le renderer
-  2. void loadGame()  charge notre jeu
-  2. void init(char *title) initialise la SDL 2 et ses libs
-  3. void cleanup() libère la mémoire occupée par window et le renderer
+  1. ```SDL_Renderer *getrenderer(void)``` le renderer
+  2. ```void loadGame()```  charge notre jeu
+  2. ```void init(char *title)``` initialise la SDL 2 et ses libs
+  3. ```void cleanup()``` libère la mémoire occupée par window et le renderer
   
-  Nom du fichier : input.cpp
+  Nom du fichier : ```input.cpp```
   ce fichier contient notre fonction de détection des entrées clavier
   
-  Nom du fichier : draw.cpp
+  Nom du fichier : ```draw.cpp```
   Ce fichier contient la suite nos fonctions essentielles de dessin et de traitement des images 
-  1. drawGame() affiche les 3 couches de la map dans l'ordre (couche 1 = action, couche 2 = background et couche 3 = foreground)
-  2. void drawTile() découpe le tileset pour afficher uniquement la bonne tile
-  3. SDL_Texture *loadImage()
-  4. void drawImage(SDL_Texture *image, int x, int y)
-  5. void delay(unsigned int frameLimit)
+  1. ```drawGame()``` affiche les 3 couches de la map dans l'ordre (couche 1 = action, couche 2 = background et couche 3 = foreground)
+  2. ```void drawTile() ```découpe le tileset pour afficher uniquement la bonne tile
+  3. ```SDL_Texture *loadImage()```
+  4. ```oid drawImage(SDL_Texture *image, int x, int y)```
+  5. ```void delay(unsigned int frameLimit)```
   
-  Nom du fichier : player.cpp
+  Nom du fichier : ```player.cpp```
   ce fichier contient les fonctions essentielles pour la création et l'utilisation du joueur 
  
 ## Dependencies for Running Locally
