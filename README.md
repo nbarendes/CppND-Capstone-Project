@@ -5,7 +5,7 @@ The project is a a platform game. Once you follow the instructions below to comp
 
 ## File and function
 
- * File name : ```defs.h```
+ * ```defs.h```
  This first file contains all the definitions of our game, useful for the compilation preprocessor as well as the headers of the libraries to be included.
  
  
