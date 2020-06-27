@@ -61,6 +61,20 @@ The project is a a platform game. Once you follow the instructions below to comp
   
   Nom du fichier : ```player.cpp```
   ce fichier contient les fonctions essentielles pour la création et l'utilisation du joueur 
+  1. ```GameObject *getPlayer(void)``` Renvoie le GameObject player
+  2.```int getPlayerx(void)``` position x du joueur
+  3. ```int getPlayery(void)``` position y du joueur
+  4. ```void setPlayerx(int valeur)``` modification de la position x du joueur
+  5. ```void setPlayery(int valeur)``` modification de la position y du joueur 
+  6. ```int getLevel(void)``` Renvoie le numéro du niveau en cours
+  7. ```void SetValeurDuNiveau(int valeur)``` Change la valeur du niveau en cours
+  8. ```void initPlayerSprites(void)``` Charge la spritesheet du joueur
+  9. ```void cleanPlayer(void)``` Libère le sprite du héros à la fin du jeu
+  10. ```void initializePlayer(int newLevel)``` initialisation du joueur
+  11. ```void drawPlayer(void)``` affiche le joueur 
+  12. ```void updatePlayer(Input *input)``` mise a jour de la position du joueur 
+  13. ```void centerScrollingOnPlayer(void)``` gére la caméra et le scrolling
+ 
  
 ## Dependencies for Running Locally
 * cmake >= 3.7
