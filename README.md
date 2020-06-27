@@ -46,6 +46,17 @@ The project is a a platform game. Once you follow the instructions below to comp
 3. Compile: `cmake .. && make`
 4. Run it: `./Bediako`.
 
+## How to play
+
+Key bindings
+
+[esc] - exit
+[arrow left] - move left
+[arrow right] - move right
+[space] - move up
+[arrow down] - move down
+
+
 ## Capstone Project Rubic Points
 ### Compileing and testing
 - [X] The project code must compile and run without errors
