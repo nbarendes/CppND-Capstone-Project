@@ -21,6 +21,12 @@ The project is a a platform game. Once you follow the instructions below to comp
   * Mac: same deal as make - [install Xcode command line tools](https://developer.apple.com/xcode/features/)
   * Windows: recommend using [MinGW](http://www.mingw.org/)
 
+## Additionnal dependencies (on Linux)
+  * TrueType Font library for Simple DirectMedia Layer 2, development files:
+    sudo apt-get install libsdl2-ttf-dev
+  * Image loading library for Simple DirectMedia Layer 2, development files:
+    sudo apt-get install -y libsdl2-image-dev
+
 ## Basic Build Instructions
 
 1. Clone this repo.
