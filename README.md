@@ -50,23 +50,14 @@ The project is a a platform game. Once you follow the instructions below to comp
 
 Key bindings<br>
 
-[esc] - exit
-[arrow left] - move left
-[arrow right] - move right
-[space] - move up
+[esc] - exit<br>
+[arrow left] - move left<br>
+[arrow right] - move right<br>
+[space] - move up<br>
 [arrow down] - move down <br>
 
 
-## How to play
-Key bindings<br>
-[enter] - start game<br>
-[esc] - exit<br>
-[space] - drop<br>
-[a/arrow left] - move left<br>
-[d/arrow right] - move right<br>
-[w/arrow up] - rotate left<br>
-[s/arrow down] - rotate right<br>
-[p] - pause/resume<br>
+
 
 ## Capstone Project Rubic Points
 ### Compileing and testing
